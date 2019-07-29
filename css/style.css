@@ -51,7 +51,6 @@
   padding: 10px 20px;
   margin: 5px;
   display: flex;
-  border: solid 1px #ccc;
   align-items: center;
   height: 100%;
 }
