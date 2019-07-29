@@ -67,7 +67,7 @@ class SimpleBannerWidget extends WP_Widget
     $style = isset($instance['style']) ? $instance['style'] : "";
     $style_name =  $this->get_field_name('style');
     $style_id = $this->get_field_id('style');
-    $styles = ["horizontal", "vertical", "vanilla"];
+    $styles = ["horizontal", "vertical", "none"];
 
     ?>
     <div id="<?php echo $this->id; ?>" class="simple-banner-widget">

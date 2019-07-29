@@ -1,4 +1,4 @@
-=== Rucy ===
+=== SimpleBannerWidget ===
 Contributors: simple-banner-widget
 Tags: banner, image, widget
 Requires at least: 5.0+
@@ -10,22 +10,21 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Add reservation update published content.
  
 == Description ==
- 
- 
+This plugin is used to place multiple banner images in the widget area. 
+
 == Installation ==
  
 You can install this plugin directly from your WordPress dashboard:
  
  1. Go to the *Plugins* menu and click *Add New*.
- 2. Search for *rucy*.
- 3. Click *Install Now* next to the *rucy* plugin.
+ 2. Search for *SimpleBannerWidget*.
+ 3. Click *Install Now* next to the *SimpleBannerWidget* plugin.
  4. Activate the plugin.
- 5. Configure reservation post type in *rucy* in *Setting* menu.
+ 5.  *Appearance* -> *Widget* -> drop to widget area a *SimpleBannerWidget* 
  
 == Screenshots ==
- 
-1. Added Reservation Content Editor in Editor.
-2. Reservation Content Type Setting Page.
+1. Edit the widget.
+2. It looks like this on the front page.
  
 == Frequently Asked Questions ==
  
