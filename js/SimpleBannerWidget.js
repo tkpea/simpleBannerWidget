@@ -81,7 +81,7 @@ class SimpleBannerWidget {
       html+= '<li>';
       html+= '<figure>';
       html+= '<a href="' + data[i]["url"] + '" rel="noopener noreferrer" target="_blank" style="height:20px;">';
-      html+= '<img src="' + data[i]["thumbnail_url"] + '" alt="#" style="height:100%;" />';
+      html+= '<img src="' + data[i]["thumbnail_url"] + '" alt="#" height="100%" width="100%" />';
       html+= '</a>';
       html+= '</figure>';
       html+= '<article>';
