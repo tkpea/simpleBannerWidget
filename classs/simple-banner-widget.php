@@ -27,20 +27,22 @@ class SimpleBannerWidget extends WP_Widget
     ?>
     <div class="<?php echo $this->prefix; ?>wrap <?php echo $this->prefix . $style; ?>">
       <?php if ($title != "") : ?>
-        <h3><?php echo $title; ?></h3>
+        <h3 class="<?php echo $this->prefix; ?>title"><?php echo $title; ?></h3>
       <?php endif; ?>
-      <?php if (is_array($data)) : ?>
+      <div class="<?php echo $this->prefix; ?>banners">
+        <?php if (is_array($data)) : ?>
 
-        <?php foreach ($data as $item) : ?>
-          <div class="<?php echo $this->prefix; ?>item">
-            <?php echo ($item->url == "") ? '<span>' : '<a href="' . $item->url . '" target="_blank" rel="noopener noreferrer">' ?>
+          <?php foreach ($data as $item) : ?>
+            <div class="<?php echo $this->prefix; ?>item">
+              <?php echo ($item->url == "") ? '<span>' : '<a href="' . $item->url . '" target="_blank" rel="noopener noreferrer">' ?>
 
-            <?php echo wp_get_attachment_image($item->image_id, $size); ?>
+              <?php echo wp_get_attachment_image($item->image_id, $size); ?>
 
-            <?php echo ($item->url == "") ? '</span>' : '</a>' ?>
-          </div>
-        <?php endforeach; ?>
-      <?php endif; ?>
+              <?php echo ($item->url == "") ? '</span>' : '</a>' ?>
+            </div>
+          <?php endforeach; ?>
+        <?php endif; ?>
+      </div>
     </div>
     <?php
     echo $args['after_widget'];

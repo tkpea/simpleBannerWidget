@@ -1,17 +1,22 @@
-.simple-banner-widget__horizontal,
-.simple-banner-widget__vertical {
+.simple-banner-widget__horizontal .simple-banner-widget__banners,
+.simple-banner-widget__vertical .simple-banner-widget__banners{
   display: flex;
   flex-wrap: wrap;
 }
 
-.simple-banner-widget__horizontal {
+.simple-banner-widget__horizontal .simple-banner-widget__banners{
   flex-direction: row;
   justify-content: center;
   margin:0 -5px;
 }
 
-.simple-banner-widget__vertical {
+.simple-banner-widget__vertical .simple-banner-widget__banners{
   flex-direction: column;
+}
+
+.simple-banner-widget__horizontal 
+.simple-banner-widget__title {
+  text-align: center;
 }
 
 .simple-banner-widget__horizontal 
@@ -47,7 +52,6 @@
   padding: 10px 20px;
   margin: 5px;
   display: block;
-  border: solid 1px #ccc;
  
 }
 
