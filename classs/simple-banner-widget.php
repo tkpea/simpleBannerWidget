@@ -79,7 +79,7 @@ class SimpleBannerWidget extends WP_Widget
 
         <p>
           <button class="button upload-image-button">
-            Pick Image
+            Select Image
           </button>
           <input id="<?php echo $this->get_field_id('image'); ?>" name="<?php echo $this->prefix; ?>image" type="url" class="widefat image" style="margin-top: 5px" disabled>
           <input id="<?php echo $this->get_field_id('image_id'); ?>" name="<?php echo $this->prefix; ?>image_id" type="hidden" class="widefat image_id" style="margin-top: 5px">

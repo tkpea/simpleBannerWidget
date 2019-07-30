@@ -24,6 +24,8 @@
   width:20%;
 }
 
+
+
 @media screen and (max-width: 1024px) {
   .simple-banner-widget__horizontal 
   .simple-banner-widget__item {
@@ -55,9 +57,21 @@
   height: 100%;
 }
 
-.simple-banner-widget__item a img,
-.simple-banner-widget__item span img{
+.simple-banner-widget__horizontal .simple-banner-widget__item a img,
+.simple-banner-widget__horizontal .simple-banner-widget__item span img{
   height: 100%;
   width: 100%;
+  object-fit: contain;
+}
+
+.simple-banner-widget__vertical .simple-banner-widget__item a,
+.simple-banner-widget__vertical .simple-banner-widget__item span {
+  justify-content: center;
+}
+
+.simple-banner-widget__vertical .simple-banner-widget__item a img,
+.simple-banner-widget__vertical .simple-banner-widget__item span img{
+  height: 100%;
+  max-width: 100%;
   object-fit: contain;
 }
